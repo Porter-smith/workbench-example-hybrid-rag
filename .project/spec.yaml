@@ -21,7 +21,7 @@ layout:
 environment:
   base:
     registry: ghcr.io
-    image: huggingface/text-generation-inference:sha-1028996-rocm
+    image: huggingface/text-generation-inference:sha-f3c5d7d@sha256:7c169c536de65dbdb867302aedf9ad0a7472df5d7c7dfd85c080037215b18c16
     build_timestamp: "20231011102429"
     name: TGI
     supported_architectures:
@@ -29,35 +29,6 @@ environment:
     cuda_version: "11.8"
     description: The huggingface text-generation-interface base container
     entrypoint_script: ""
-    labels:
-    - ubuntu
-    - python3
-    - jupyterlab
-    apps: []
-    programming_languages:
-    - python3
-    icon_url: ""
-    image_version: 1.0.0
-    os: linux
-    os_distro: ubuntu
-    os_distro_release: "20.04"
-    schema_version: v2
-    user_info:
-      uid: ""
-      gid: ""
-      username: ""
-    package_managers:
-    - name: apt
-      binary_path: /usr/bin/apt
-      installed_packages:
-      - ca-certificates
-      - curl
-    - name: pip
-      binary_path: /opt/conda/bin/pip
-      installed_packages: []
-    package_manager_environment:
-      name: ""
-      target: ""
 execution:
   apps:
   - name: chat
